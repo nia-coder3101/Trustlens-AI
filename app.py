@@ -13,7 +13,7 @@ import hashlib
 # ==========================================
 API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('models/gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 from PIL import Image
 import os
