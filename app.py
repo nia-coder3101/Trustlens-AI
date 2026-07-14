@@ -449,7 +449,7 @@ if analyze_btn:
                 # Prepare Multimodal Content
                 prompt = f"""
                 You are a world-class forensic investigator and cybersecurity expert. Analyze this input in {language}.
-                Return ONLY a JSON object with this structure:
+                Return ONLY a JSON object with this structure. For the tags, do NOT use text shortcodes like :sparkles:; instead, output actual visual graphical emojis (like 🏛️, 📩, ✨, 🤑, 💵, 🤝, ❓, 📜) directly at the start of each text string.
                 {{
                   "trust_score": (integer 0-100),
                   "status": "VERIFIED" or "SUSPICIOUS" or "FRAUDULENT",
